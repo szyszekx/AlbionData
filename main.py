@@ -3,6 +3,7 @@ import logging.handlers
 import os
 
 import requests
+import json
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -27,8 +28,19 @@ logger.addHandler(logger_file_handler)
 if __name__ == "__main__":
     # logger.info(f"Token value: {SOME_SECRET}")
 
-    r = requests.get('https://weather.talkpython.fm/api/weather/?city=Berlin&country=DE')
-    if r.status_code == 200:
-        data = r.json()
-        temperature = data["forecast"]["temp"]
-        logger.info(f'Weather in Berlin: {temperature}')
+    r = requests.get('https://gameinfo-ams.albiononline.com/api/gameinfo/battles?range=day')
+    data = r.json()
+    logger.info(f'Number of battles: {len(data)}')
+    logger.info(f'{r.status_code} - {r.reason}')
+    for battle in data:
+        count = 0
+        for x in battle["players"]:
+            if battle["players"][x]["guildId"] == "wtqzxhOLStCwyD_ixIxC3A":
+                count += 1
+        if count > 15:
+            logger.info(f'fightId: {battle["id"]} started {battle["startTime"]} end ended {battle["endTime"]}')
+            logger.info(f'Total players found in guild: {count}')
+    # if r.status_code == 200:
+    #     data = r.json()
+    #     temperature = data["forecast"]["temp"]
+    #     logger.info(f'Weather in Berlin: {temperature}')
