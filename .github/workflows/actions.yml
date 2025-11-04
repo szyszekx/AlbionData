@@ -3,7 +3,10 @@ name: run main.py
 on:
   schedule:
     - cron: '* * * * *' # At 00:00 on Monday
-
+    
+permissions:
+  contents: write 
+  
 jobs:
   build:
     runs-on: ubuntu-latest
