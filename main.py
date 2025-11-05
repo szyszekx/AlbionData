@@ -28,7 +28,7 @@ logger.addHandler(logger_file_handler)
 if __name__ == "__main__":
     # logger.info(f"Token value: {SOME_SECRET}")
 
-    r = requests.get('https://gameinfo-ams.albiononline.com/api/gameinfo/battles?range=day&sort=recent&limit=500')
+    r = requests.get('https://gameinfo-ams.albiononline.com/api/gameinfo/battles?range=day&sort=recent&limit=51')
     data = r.json()
     logger.info(f'Number of battles: {len(data)}')
     logger.info(f'{r.status_code} - {r.reason}')
