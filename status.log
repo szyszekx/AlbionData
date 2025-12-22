@@ -6044,3 +6044,7 @@
 2025-12-22 14:41:44,273 - __main__ - INFO - 200 - OK
 2025-12-22 14:54:40,176 - __main__ - INFO - Number of battles: 51
 2025-12-22 14:54:40,176 - __main__ - INFO - 200 - OK
+2025-12-22 15:24:12,722 - __main__ - INFO - Number of battles: 51
+2025-12-22 15:24:12,722 - __main__ - INFO - 200 - OK
+2025-12-22 15:24:12,722 - __main__ - INFO - fightId: 301310452 started 2025-12-22T14:45:45.219179100Z end ended 2025-12-22T14:46:43.022560Z
+2025-12-22 15:24:12,722 - __main__ - INFO - Total players found in guild: 32
