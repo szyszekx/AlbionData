@@ -7900,3 +7900,7 @@
 2026-01-07 17:55:14,120 - __main__ - INFO - 200 - OK
 2026-01-07 18:37:46,002 - __main__ - INFO - Number of battles: 51
 2026-01-07 18:37:46,002 - __main__ - INFO - 200 - OK
+2026-01-07 19:00:50,031 - __main__ - INFO - Number of battles: 51
+2026-01-07 19:00:50,031 - __main__ - INFO - 200 - OK
+2026-01-07 19:00:50,032 - __main__ - INFO - fightId: 308297191 started 2026-01-07T18:23:15.457050200Z end ended 2026-01-07T18:28:35.568414100Z
+2026-01-07 19:00:50,032 - __main__ - INFO - Total players found in guild: 64
